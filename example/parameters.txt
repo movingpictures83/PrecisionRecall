@@ -1,0 +1,3 @@
+metadata	metadata.txt
+auprc	F1.txt
+rawanalysis	raw.tsv

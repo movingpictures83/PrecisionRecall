@@ -1,0 +1,2 @@
+Prefix plugins/PrecisionRecall/example/
+Plugin PrecisionRecall inputfile parameters.txt outputfile output
