@@ -75,6 +75,7 @@ ggplot(data=Plot.Fig3, aes(x=Profilers, y=Distance, fill=Profilers))+
 d<-read.table(paste(pfix, parameters["rawanalysis", 2], sep="/"), header=TRUE, sep='\t')
 
 d_m<-melt(d)
+write.csv(d_m$value, paste(outputfile, "csv", sep="."))
 
 tmp1 <- do.call(rbind, strsplit(as.character(d_m[,1]), '_'))
 tmp2 <- do.call(rbind, strsplit(as.character(d_m[,2]), '_'))
